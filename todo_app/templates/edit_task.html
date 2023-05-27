@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <h3 class="pt-5 pb-5 text-center"> Django TODO App - Edit Task</h3>
-        <form action="" method="POST" style="width: 500px; margin: auto;">
+        <form action="{% url 'edit_task' get_task.pk %}" method="POST" style="width: 500px; margin: auto;">
             {% csrf_token %}
               <div class="form-group">
                   <span style="display: flex;">
